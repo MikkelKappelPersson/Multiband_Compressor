@@ -1429,7 +1429,7 @@
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
-							"parameter_mmin" : 0.1,
+							"parameter_mmin" : 0.5,
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "Q[3]",
 							"parameter_initial_enable" : 1,
