@@ -151,18 +151,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 268.5, 39.0, 22.0 ],
-					"text" : "dbtoa"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -236,36 +224,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-87",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"panelcolor" : [ 0.545098039215686, 0.545098039215686, 0.545098039215686, 1.0 ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 244.0, 199.221621621621637, 50.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 224.5, 401.5, 50.0, 48.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
-							"parameter_linknames" : 1,
-							"parameter_mmin" : -15.0,
-							"parameter_longname" : "Gain[2]",
-							"parameter_mmax" : 15.0,
-							"parameter_initial" : [ 21.259842519685023 ],
-							"parameter_shortname" : "Gain"
-						}
-
-					}
-,
-					"varname" : "Gain[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-79",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -278,15 +236,15 @@
 					"presentation_rect" : [ 269.333333333333371, 401.5, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 21.259842519685023 ],
+							"parameter_shortname" : "Cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : 0.01,
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "Cutoff",
-							"parameter_mmax" : 22020.0,
-							"parameter_initial" : [ 21.259842519685023 ],
-							"parameter_shortname" : "Cutoff"
+							"parameter_mmax" : 22020.0
 						}
 
 					}
@@ -396,7 +354,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.5, 734.0, 302.0, 22.0 ],
-					"text" : "1.564982 -1.032014 0. -0.467033 0."
+					"text" : "1.100259 -0.743607 0. -0.643348 0."
 				}
 
 			}
@@ -927,13 +885,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"order" : 0,
 					"source" : [ "obj-23", 0 ]
@@ -982,7 +933,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-87", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -1162,13 +1113,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-87", 0 ]
 				}
 
 			}
