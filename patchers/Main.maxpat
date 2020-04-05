@@ -39,6 +39,70 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"curvecolor" : [ 0.996078431372549, 0.188235294117647, 0.211764705882353, 0.9 ],
+					"domain" : [ 30.0, 22050.0 ],
+					"fontface" : 0,
+					"id" : "obj-37",
+					"maxclass" : "filtergraph~",
+					"nfilters" : 1,
+					"numdisplay" : 0,
+					"numinlets" : 8,
+					"numoutlets" : 7,
+					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 170.291666865348816, 631.0, 64.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 256.535718023777008, 225.500001788139343, 447.0, 247.0 ],
+					"setfilter" : [ 0, 0, 1, 0, 0, 135.784576416015625, 2.28444242477417, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"varname" : "filtergraph~[9]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
+					"curvecolor" : [ 0.458823529411765, 0.733333333333333, 0.96078431372549, 1.0 ],
+					"domain" : [ 30.0, 22050.0 ],
+					"fontface" : 0,
+					"id" : "obj-34",
+					"maxclass" : "filtergraph~",
+					"nfilters" : 1,
+					"numinlets" : 8,
+					"numoutlets" : 7,
+					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 189.509803851445554, 221.0, 64.0, 51.315793633460999 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 256.535718023777008, 225.500001788139343, 447.0, 247.0 ],
+					"setfilter" : [ 0, 0, 1, 0, 0, 135.784576416015625, 2.28444242477417, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"varname" : "filtergraph~[8]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"curvecolor" : [ 0.0, 0.988235294117647, 0.650980392156863, 0.14 ],
+					"domain" : [ 30.0, 22050.0 ],
+					"fontface" : 0,
+					"id" : "obj-9",
+					"maxclass" : "filtergraph~",
+					"nfilters" : 1,
+					"numinlets" : 8,
+					"numoutlets" : 7,
+					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 170.291666865348816, 459.390711188316345, 82.052642345428467, 34.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 256.535718023777008, 225.500001788139343, 447.0, 247.0 ],
+					"setfilter" : [ 0, 0, 1, 0, 0, 135.784576416015625, 2.28444242477417, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"varname" : "filtergraph~[7]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -311,13 +375,13 @@
 					"presentation_rect" : [ 723.623945534229279, 512.847887694835663, 155.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Peak / RMS",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "Peak / RMS[3]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 0.99
+							"parameter_mmax" : 0.99,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Peak / RMS"
 						}
 
 					}
@@ -366,14 +430,14 @@
 					"presentation_rect" : [ 880.623945534229279, 512.847887694835663, 46.0, 171.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Threshold",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -40.0,
 							"parameter_longname" : "Threshold[4]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Threshold"
 						}
 
 					}
@@ -396,15 +460,15 @@
 					"presentation_rect" : [ 761.228111147880554, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmin" : 1.0,
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[26]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 50 ],
+							"parameter_shortname" : "Release"
 						}
 
 					}
@@ -427,8 +491,6 @@
 					"presentation_rect" : [ 694.623945534229279, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_linknames" : 1,
@@ -436,7 +498,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[8]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 2 ],
+							"parameter_shortname" : "Attack"
 						}
 
 					}
@@ -459,8 +523,6 @@
 					"presentation_rect" : [ 827.83227676153183, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Ratio",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
@@ -468,7 +530,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[9]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 10.0
+							"parameter_mmax" : 10.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Ratio"
 						}
 
 					}
@@ -566,13 +630,13 @@
 					"presentation_rect" : [ 472.594538271427155, 512.847887694835663, 155.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Peak / RMS",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "Peak / RMS[2]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 0.99
+							"parameter_mmax" : 0.99,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Peak / RMS"
 						}
 
 					}
@@ -621,14 +685,14 @@
 					"presentation_rect" : [ 629.594538271427155, 512.847887694835663, 46.0, 171.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Threshold",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -40.0,
 							"parameter_longname" : "Threshold[3]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Threshold"
 						}
 
 					}
@@ -651,15 +715,15 @@
 					"presentation_rect" : [ 510.19870388507843, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmin" : 1.0,
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[21]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 50 ],
+							"parameter_shortname" : "Release"
 						}
 
 					}
@@ -682,8 +746,6 @@
 					"presentation_rect" : [ 443.594538271427155, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_linknames" : 1,
@@ -691,7 +753,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[5]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 2 ],
+							"parameter_shortname" : "Attack"
 						}
 
 					}
@@ -714,8 +778,6 @@
 					"presentation_rect" : [ 576.802869498729706, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Ratio",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
@@ -723,7 +785,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[6]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 10.0
+							"parameter_mmax" : 10.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Ratio"
 						}
 
 					}
@@ -821,13 +885,13 @@
 					"presentation_rect" : [ 224.771018326282501, 512.847887694835663, 155.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Peak / RMS",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "Peak / RMS[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 0.99
+							"parameter_mmax" : 0.99,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Peak / RMS"
 						}
 
 					}
@@ -876,14 +940,14 @@
 					"presentation_rect" : [ 381.771018326282501, 512.847887694835663, 46.0, 171.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Threshold",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -40.0,
 							"parameter_longname" : "Threshold[2]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Threshold"
 						}
 
 					}
@@ -906,15 +970,15 @@
 					"presentation_rect" : [ 262.375183939933777, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmin" : 1.0,
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[15]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 50 ],
+							"parameter_shortname" : "Release"
 						}
 
 					}
@@ -937,8 +1001,6 @@
 					"presentation_rect" : [ 195.771018326282501, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_linknames" : 1,
@@ -946,7 +1008,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[3]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 2 ],
+							"parameter_shortname" : "Attack"
 						}
 
 					}
@@ -969,8 +1033,6 @@
 					"presentation_rect" : [ 328.979349553585052, 635.452053308486938, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Ratio",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
@@ -978,7 +1040,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[16]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 10.0
+							"parameter_mmax" : 10.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Ratio"
 						}
 
 					}
@@ -1088,13 +1152,13 @@
 					"presentation_rect" : [ 417.431552410125732, 813.289058148860931, 155.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Peak / RMS",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_longname" : "Peak / RMS",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 0.99
+							"parameter_mmax" : 0.99,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Peak / RMS"
 						}
 
 					}
@@ -1143,14 +1207,14 @@
 					"presentation_rect" : [ 574.431552410125732, 813.289058148860931, 46.0, 171.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Threshold",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -40.0,
 							"parameter_longname" : "Threshold[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Threshold"
 						}
 
 					}
@@ -1173,15 +1237,15 @@
 					"presentation_rect" : [ 455.035718023777008, 935.893223762512207, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 50 ],
-							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_mmin" : 1.0,
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[13]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 50 ],
+							"parameter_shortname" : "Release"
 						}
 
 					}
@@ -1204,8 +1268,6 @@
 					"presentation_rect" : [ 388.431552410125732, 935.893223762512207, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2 ],
-							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
 							"parameter_linknames" : 1,
@@ -1213,7 +1275,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[14]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 500.0
+							"parameter_mmax" : 500.0,
+							"parameter_initial" : [ 2 ],
+							"parameter_shortname" : "Attack"
 						}
 
 					}
@@ -1236,8 +1300,6 @@
 					"presentation_rect" : [ 521.639883637428284, 935.893223762512207, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Ratio",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
@@ -1245,7 +1307,9 @@
 							"parameter_exponent" : 2.0,
 							"parameter_longname" : "attack[12]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 10.0
+							"parameter_mmax" : 10.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Ratio"
 						}
 
 					}
@@ -1301,7 +1365,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"curvecolor" : [ 0.811764705882353, 0.003921568627451, 0.031372549019608, 1.0 ],
+					"curvecolor" : [ 0.996078431372549, 0.188235294117647, 0.211764705882353, 1.0 ],
 					"domain" : [ 30.0, 22050.0 ],
 					"fontface" : 0,
 					"id" : "obj-12",
@@ -1323,7 +1387,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.0 ],
-					"curvecolor" : [ 0.2, 0.0, 0.992156862745098, 1.0 ],
+					"curvecolor" : [ 0.458823529411765, 0.733333333333333, 0.96078431372549, 1.0 ],
 					"domain" : [ 30.0, 22050.0 ],
 					"fontface" : 0,
 					"id" : "obj-15",
@@ -1424,8 +1488,6 @@
 					"presentation_rect" : [ 507.035718023777122, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "Q",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
@@ -1433,7 +1495,9 @@
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "Q[3]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 18.0
+							"parameter_mmax" : 18.0,
+							"parameter_initial" : [ 1.0 ],
+							"parameter_shortname" : "Q"
 						}
 
 					}
@@ -1456,15 +1520,15 @@
 					"presentation_rect" : [ 403.035718023776894, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : -15.0,
 							"parameter_longname" : "Gain[7]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 15.0
+							"parameter_mmax" : 15.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Gain"
 						}
 
 					}
@@ -1487,8 +1551,6 @@
 					"presentation_rect" : [ 455.035718023776894, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 220 ],
-							"parameter_shortname" : "Freq",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3,
 							"parameter_linknames" : 1,
@@ -1496,7 +1558,9 @@
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "Freq[3]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 22000.0
+							"parameter_mmax" : 22000.0,
+							"parameter_initial" : [ 220 ],
+							"parameter_shortname" : "Freq"
 						}
 
 					}
@@ -1519,8 +1583,6 @@
 					"presentation_rect" : [ 308.535718023777008, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 10 ],
-							"parameter_shortname" : "Cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3,
 							"parameter_linknames" : 1,
@@ -1528,7 +1590,9 @@
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "Cutoff[3]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 22000.0
+							"parameter_mmax" : 22000.0,
+							"parameter_initial" : [ 10 ],
+							"parameter_shortname" : "Cutoff"
 						}
 
 					}
@@ -1551,15 +1615,15 @@
 					"presentation_rect" : [ 256.535718023777008, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : -15.0,
 							"parameter_longname" : "Gain[6]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 15.0
+							"parameter_mmax" : 15.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Gain"
 						}
 
 					}
@@ -1582,8 +1646,6 @@
 					"presentation_rect" : [ 653.535718023777008, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 3000 ],
-							"parameter_shortname" : "Cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3,
 							"parameter_linknames" : 1,
@@ -1591,7 +1653,9 @@
 							"parameter_exponent" : 4.0,
 							"parameter_longname" : "Cutoff[2]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 22000.0
+							"parameter_mmax" : 22000.0,
+							"parameter_initial" : [ 3000 ],
+							"parameter_shortname" : "Cutoff"
 						}
 
 					}
@@ -1614,15 +1678,15 @@
 					"presentation_rect" : [ 601.535718023776894, 175.500001788139343, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : -15.0,
 							"parameter_longname" : "Gain[5]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 15.0
+							"parameter_mmax" : 15.0,
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "Gain"
 						}
 
 					}
@@ -1681,13 +1745,13 @@
 					"patching_rect" : [ 25.291666865348816, 665.122785568237305, 70.0, 134.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "input",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[3]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "input"
 						}
 
 					}
@@ -1984,6 +2048,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 2 ]
 				}
 
@@ -2097,6 +2170,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 2 ]
 				}
 
@@ -2130,6 +2204,14 @@
 					"destination" : [ "obj-35", 0 ],
 					"order" : 1,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 2 ]
 				}
 
 			}
@@ -2199,6 +2281,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"order" : 1,
 					"source" : [ "obj-45", 2 ]
 				}
 
@@ -2252,6 +2335,14 @@
 					"midpoints" : [ 95.029411792755127, 504.0, 420.0, 504.0, 420.0, 504.0, 651.0, 504.0, 651.0, 483.0, 688.941165924072266, 483.0 ],
 					"order" : 0,
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
+					"source" : [ "obj-45", 2 ]
 				}
 
 			}
@@ -2739,67 +2830,75 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-66::obj-109" : [ "attack[23]", "Attack", 0 ],
-			"obj-33" : [ "attack[12]", "Ratio", 0 ],
-			"obj-16" : [ "Q[3]", "Q", 0 ],
-			"obj-10::obj-19" : [ "attack[4]", "Forgetting Factor", 0 ],
-			"obj-66::obj-113" : [ "attack[24]", "Release", 0 ],
-			"obj-47::obj-87" : [ "Gain[8]", "Gain", 0 ],
-			"obj-80::obj-7" : [ "attack[29]", "Ratio", 0 ],
-			"obj-10::obj-113" : [ "attack[1]", "Release", 0 ],
-			"obj-14" : [ "Gain[6]", "Gain", 0 ],
-			"obj-78" : [ "attack[9]", "Ratio", 0 ],
-			"obj-28" : [ "attack[3]", "Attack", 0 ],
-			"obj-65" : [ "attack[6]", "Ratio", 0 ],
-			"obj-10::obj-7" : [ "attack[2]", "Ratio", 0 ],
-			"obj-45::obj-15" : [ "Q[4]", "Q", 0 ],
-			"obj-50" : [ "Threshold[1]", "Threshold", 0 ],
-			"obj-54::obj-79" : [ "Cutoff[4]", "Cutoff", 0 ],
-			"obj-29" : [ "attack[16]", "Ratio", 0 ],
-			"obj-113" : [ "attack[13]", "Release", 0 ],
-			"obj-35" : [ "live.gain~[3]", "input", 0 ],
-			"obj-87" : [ "Gain[5]", "Gain", 0 ],
-			"obj-31::obj-19" : [ "attack[19]", "Forgetting Factor", 0 ],
-			"obj-47::obj-79" : [ "Freq[5]", "Freq", 0 ],
-			"obj-80::obj-109" : [ "attack[27]", "Attack", 0 ],
-			"obj-80::obj-113" : [ "attack[28]", "Release", 0 ],
-			"obj-31::obj-109" : [ "attack[20]", "Attack", 0 ],
-			"obj-88::obj-55" : [ "Cutoff[5]", "Cutoff", 0 ],
-			"obj-47::obj-15" : [ "Q[5]", "Q", 0 ],
-			"obj-76" : [ "attack[26]", "Release", 0 ],
-			"obj-75" : [ "Threshold[4]", "Threshold", 0 ],
-			"obj-77" : [ "attack[8]", "Attack", 0 ],
-			"obj-45::obj-79" : [ "Freq[4]", "Freq", 0 ],
-			"obj-62" : [ "attack[21]", "Release", 0 ],
-			"obj-73" : [ "Peak / RMS[3]", "Peak / RMS", 0 ],
 			"obj-109" : [ "attack[14]", "Attack", 0 ],
-			"obj-10::obj-109" : [ "attack", "Attack", 0 ],
+			"obj-28" : [ "attack[3]", "Attack", 0 ],
+			"obj-31::obj-7" : [ "attack[18]", "Ratio", 0 ],
+			"obj-80::obj-109" : [ "attack[27]", "Attack", 0 ],
+			"obj-79" : [ "Cutoff[2]", "Cutoff", 0 ],
+			"obj-47::obj-79" : [ "Freq[5]", "Freq", 0 ],
+			"obj-44" : [ "Peak / RMS", "Peak / RMS", 0 ],
 			"obj-64" : [ "attack[5]", "Attack", 0 ],
-			"obj-17" : [ "Gain[7]", "Gain", 0 ],
+			"obj-10::obj-19" : [ "attack[4]", "Forgetting Factor", 0 ],
+			"obj-45::obj-15" : [ "Q[4]", "Q", 0 ],
+			"obj-45::obj-87" : [ "Gain[4]", "Gain", 0 ],
+			"obj-18" : [ "Freq[3]", "Freq", 0 ],
+			"obj-113" : [ "attack[13]", "Release", 0 ],
+			"obj-27" : [ "attack[15]", "Release", 0 ],
+			"obj-45::obj-79" : [ "Freq[4]", "Freq", 0 ],
+			"obj-31::obj-19" : [ "attack[19]", "Forgetting Factor", 0 ],
+			"obj-10::obj-109" : [ "attack", "Attack", 0 ],
+			"obj-66::obj-19" : [ "attack[22]", "Forgetting Factor", 0 ],
+			"obj-80::obj-113" : [ "attack[28]", "Release", 0 ],
+			"obj-76" : [ "attack[26]", "Release", 0 ],
+			"obj-62" : [ "attack[21]", "Release", 0 ],
+			"obj-54::obj-79" : [ "Cutoff[4]", "Cutoff", 0 ],
+			"obj-3::obj-79" : [ "Cutoff", "Cutoff", 0 ],
+			"obj-35" : [ "live.gain~[3]", "input", 0 ],
 			"obj-59" : [ "Peak / RMS[2]", "Peak / RMS", 0 ],
 			"obj-66::obj-7" : [ "attack[25]", "Ratio", 0 ],
-			"obj-18" : [ "Freq[3]", "Freq", 0 ],
-			"obj-55" : [ "Cutoff[3]", "Cutoff", 0 ],
-			"obj-27" : [ "attack[15]", "Release", 0 ],
-			"obj-79" : [ "Cutoff[2]", "Cutoff", 0 ],
-			"obj-80::obj-19" : [ "attack[30]", "Forgetting Factor", 0 ],
-			"obj-24" : [ "Peak / RMS[1]", "Peak / RMS", 0 ],
-			"obj-61" : [ "Threshold[3]", "Threshold", 0 ],
-			"obj-31::obj-113" : [ "attack[17]", "Release", 0 ],
-			"obj-66::obj-19" : [ "attack[22]", "Forgetting Factor", 0 ],
-			"obj-45::obj-87" : [ "Gain[4]", "Gain", 0 ],
-			"obj-26" : [ "Threshold[2]", "Threshold", 0 ],
-			"obj-3::obj-79" : [ "Cutoff", "Cutoff", 0 ],
+			"obj-14" : [ "Gain[6]", "Gain", 0 ],
+			"obj-80::obj-7" : [ "attack[29]", "Ratio", 0 ],
+			"obj-10::obj-113" : [ "attack[1]", "Release", 0 ],
+			"obj-47::obj-87" : [ "Gain[8]", "Gain", 0 ],
+			"obj-77" : [ "attack[8]", "Attack", 0 ],
+			"obj-78" : [ "attack[9]", "Ratio", 0 ],
+			"obj-17" : [ "Gain[7]", "Gain", 0 ],
 			"obj-2::obj-55" : [ "Cutoff[1]", "Cutoff", 0 ],
-			"obj-31::obj-7" : [ "attack[18]", "Ratio", 0 ],
-			"obj-44" : [ "Peak / RMS", "Peak / RMS", 0 ],
+			"obj-31::obj-113" : [ "attack[17]", "Release", 0 ],
+			"obj-29" : [ "attack[16]", "Ratio", 0 ],
+			"obj-33" : [ "attack[12]", "Ratio", 0 ],
+			"obj-61" : [ "Threshold[3]", "Threshold", 0 ],
+			"obj-66::obj-113" : [ "attack[24]", "Release", 0 ],
+			"obj-88::obj-55" : [ "Cutoff[5]", "Cutoff", 0 ],
+			"obj-87" : [ "Gain[5]", "Gain", 0 ],
+			"obj-24" : [ "Peak / RMS[1]", "Peak / RMS", 0 ],
+			"obj-65" : [ "attack[6]", "Ratio", 0 ],
+			"obj-50" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-10::obj-7" : [ "attack[2]", "Ratio", 0 ],
+			"obj-31::obj-109" : [ "attack[20]", "Attack", 0 ],
+			"obj-55" : [ "Cutoff[3]", "Cutoff", 0 ],
+			"obj-66::obj-109" : [ "attack[23]", "Attack", 0 ],
+			"obj-26" : [ "Threshold[2]", "Threshold", 0 ],
+			"obj-75" : [ "Threshold[4]", "Threshold", 0 ],
+			"obj-80::obj-19" : [ "attack[30]", "Forgetting Factor", 0 ],
+			"obj-73" : [ "Peak / RMS[3]", "Peak / RMS", 0 ],
+			"obj-47::obj-15" : [ "Q[5]", "Q", 0 ],
+			"obj-16" : [ "Q[3]", "Q", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-66::obj-109" : 				{
-					"parameter_longname" : "attack[23]"
+				"obj-31::obj-7" : 				{
+					"parameter_longname" : "attack[18]"
+				}
+,
+				"obj-80::obj-109" : 				{
+					"parameter_longname" : "attack[27]"
+				}
+,
+				"obj-47::obj-79" : 				{
+					"parameter_longname" : "Freq[5]"
 				}
 ,
 				"obj-10::obj-19" : 				{
@@ -2809,77 +2908,23 @@
 					"parameter_unitstyle" : 1
 				}
 ,
-				"obj-66::obj-113" : 				{
-					"parameter_longname" : "attack[24]"
-				}
-,
-				"obj-47::obj-87" : 				{
-					"parameter_longname" : "Gain[8]"
-				}
-,
-				"obj-80::obj-7" : 				{
-					"parameter_longname" : "attack[29]"
-				}
-,
-				"obj-10::obj-113" : 				{
-					"parameter_longname" : "attack[1]",
-					"parameter_shortname" : "Release",
-					"parameter_range" : [ 1.0, 500.0 ],
-					"parameter_initial" : 50,
-					"parameter_initial_enable" : 1,
-					"parameter_exponent" : 2.0
-				}
-,
-				"obj-10::obj-7" : 				{
-					"parameter_longname" : "attack[2]",
-					"parameter_shortname" : "Ratio",
-					"parameter_range" : [ 1.0, 10.0 ],
-					"parameter_unitstyle" : 1,
-					"parameter_initial" : 1,
-					"parameter_linknames" : 1,
-					"parameter_defer" : 0
-				}
-,
 				"obj-45::obj-15" : 				{
 					"parameter_longname" : "Q[4]",
 					"parameter_initial_enable" : 0
 				}
 ,
-				"obj-54::obj-79" : 				{
-					"parameter_longname" : "Cutoff[4]"
-				}
-,
-				"obj-31::obj-19" : 				{
-					"parameter_longname" : "attack[19]"
-				}
-,
-				"obj-47::obj-79" : 				{
-					"parameter_longname" : "Freq[5]"
-				}
-,
-				"obj-80::obj-109" : 				{
-					"parameter_longname" : "attack[27]"
-				}
-,
-				"obj-80::obj-113" : 				{
-					"parameter_longname" : "attack[28]"
-				}
-,
-				"obj-31::obj-109" : 				{
-					"parameter_longname" : "attack[20]"
-				}
-,
-				"obj-88::obj-55" : 				{
-					"parameter_longname" : "Cutoff[5]"
-				}
-,
-				"obj-47::obj-15" : 				{
-					"parameter_longname" : "Q[5]"
+				"obj-45::obj-87" : 				{
+					"parameter_longname" : "Gain[4]",
+					"parameter_initial_enable" : 0
 				}
 ,
 				"obj-45::obj-79" : 				{
 					"parameter_longname" : "Freq[4]",
 					"parameter_initial_enable" : 0
+				}
+,
+				"obj-31::obj-19" : 				{
+					"parameter_longname" : "attack[19]"
 				}
 ,
 				"obj-10::obj-109" : 				{
@@ -2898,25 +2943,16 @@
 					"parameter_initial_enable" : 1
 				}
 ,
-				"obj-66::obj-7" : 				{
-					"parameter_longname" : "attack[25]"
-				}
-,
-				"obj-80::obj-19" : 				{
-					"parameter_longname" : "attack[30]"
-				}
-,
-				"obj-31::obj-113" : 				{
-					"parameter_longname" : "attack[17]"
-				}
-,
 				"obj-66::obj-19" : 				{
 					"parameter_longname" : "attack[22]"
 				}
 ,
-				"obj-45::obj-87" : 				{
-					"parameter_longname" : "Gain[4]",
-					"parameter_initial_enable" : 0
+				"obj-80::obj-113" : 				{
+					"parameter_longname" : "attack[28]"
+				}
+,
+				"obj-54::obj-79" : 				{
+					"parameter_longname" : "Cutoff[4]"
 				}
 ,
 				"obj-3::obj-79" : 				{
@@ -2926,13 +2962,68 @@
 					"parameter_initial_enable" : 0
 				}
 ,
+				"obj-66::obj-7" : 				{
+					"parameter_longname" : "attack[25]"
+				}
+,
+				"obj-80::obj-7" : 				{
+					"parameter_longname" : "attack[29]"
+				}
+,
+				"obj-10::obj-113" : 				{
+					"parameter_longname" : "attack[1]",
+					"parameter_shortname" : "Release",
+					"parameter_range" : [ 1.0, 500.0 ],
+					"parameter_initial" : 50,
+					"parameter_initial_enable" : 1,
+					"parameter_exponent" : 2.0
+				}
+,
+				"obj-47::obj-87" : 				{
+					"parameter_longname" : "Gain[8]"
+				}
+,
 				"obj-2::obj-55" : 				{
 					"parameter_longname" : "Cutoff[1]",
 					"parameter_initial_enable" : 0
 				}
 ,
-				"obj-31::obj-7" : 				{
-					"parameter_longname" : "attack[18]"
+				"obj-31::obj-113" : 				{
+					"parameter_longname" : "attack[17]"
+				}
+,
+				"obj-66::obj-113" : 				{
+					"parameter_longname" : "attack[24]"
+				}
+,
+				"obj-88::obj-55" : 				{
+					"parameter_longname" : "Cutoff[5]"
+				}
+,
+				"obj-10::obj-7" : 				{
+					"parameter_longname" : "attack[2]",
+					"parameter_shortname" : "Ratio",
+					"parameter_range" : [ 1.0, 10.0 ],
+					"parameter_unitstyle" : 1,
+					"parameter_initial" : 1,
+					"parameter_linknames" : 1,
+					"parameter_defer" : 0
+				}
+,
+				"obj-31::obj-109" : 				{
+					"parameter_longname" : "attack[20]"
+				}
+,
+				"obj-66::obj-109" : 				{
+					"parameter_longname" : "attack[23]"
+				}
+,
+				"obj-80::obj-19" : 				{
+					"parameter_longname" : "attack[30]"
+				}
+,
+				"obj-47::obj-15" : 				{
+					"parameter_longname" : "Q[5]"
 				}
 
 			}
