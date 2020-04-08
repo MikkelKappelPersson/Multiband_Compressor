@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -925.0, 201.0, 547.0, 960.0 ],
+		"rect" : [ 631.0, 187.0, 631.0, 960.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -212,14 +212,14 @@
 					"patching_rect" : [ 152.97863382101059, 191.0, 95.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "attack[4]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 0.99,
 							"parameter_initial" : [ 0.1 ],
 							"parameter_shortname" : "Forgetting Factor",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_linknames" : 1
+							"parameter_linknames" : 1,
+							"parameter_longname" : "attack[19]"
 						}
 
 					}
@@ -289,7 +289,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 34.0, 85.0, 1452.0, 1073.0 ],
+						"rect" : [ 101.0, 337.0, 1452.0, 1073.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -549,16 +549,16 @@
 					"patching_rect" : [ 314.793162012100197, 401.5, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : 1.0,
-							"parameter_exponent" : 2.0,
-							"parameter_longname" : "attack[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 10.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "Ratio",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_linknames" : 1
+							"parameter_linknames" : 1,
+							"parameter_mmin" : 1.0,
+							"parameter_exponent" : 2.0,
+							"parameter_longname" : "attack[18]"
 						}
 
 					}
@@ -676,15 +676,15 @@
 					"patching_rect" : [ 296.100000000000023, 645.435897409915924, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : 1.0,
-							"parameter_exponent" : 2.0,
-							"parameter_longname" : "attack[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 500.0,
 							"parameter_initial" : [ 50 ],
 							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 2
+							"parameter_unitstyle" : 2,
+							"parameter_mmin" : 1.0,
+							"parameter_exponent" : 2.0,
+							"parameter_longname" : "attack[17]"
 						}
 
 					}
@@ -705,16 +705,16 @@
 					"patching_rect" : [ 199.0, 645.435897409915924, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : 0.1,
-							"parameter_exponent" : 2.0,
-							"parameter_longname" : "attack",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 500.0,
 							"parameter_initial" : [ 2 ],
 							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
-							"parameter_linknames" : 1
+							"parameter_linknames" : 1,
+							"parameter_mmin" : 0.1,
+							"parameter_exponent" : 2.0,
+							"parameter_longname" : "attack[20]"
 						}
 
 					}
@@ -1244,7 +1244,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "sig = in1;\r\n\r\nthreshLin = pow(10, thresholdDb/20);\r\nif (sig < threshLin) {\r\n\tout1 = 1;\r\n\t}\r\nelse {\r\n\t//out1 = thresh + (sig - tresh)*(1/ratio);\r\n\t//power = pow(1/ratio-1,213);\r\n\tout1 = pow(sig/threshLin,1/ratio-1);\r\n\t}",
+									"code" : "sig = in1;\r\n\r\nthreshLin = pow(10, thresholdDb/20);\r\nif (sig < threshLin) {\r\n\tout1 = 1;\r\n\t}\r\nelse {\r\n\tout1 = pow(sig/threshLin,1/ratio-1);\r\n\t}",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
