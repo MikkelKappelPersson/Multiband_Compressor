@@ -54,7 +54,7 @@
 				"box" : 				{
 					"comment" : "Level measurement",
 					"id" : "obj-38",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "compression factor",
 					"id" : "obj-37",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -127,7 +127,7 @@
 				"box" : 				{
 					"comment" : "forgetting facotr",
 					"id" : "obj-21",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -140,7 +140,7 @@
 				"box" : 				{
 					"comment" : "ThresholdDb",
 					"id" : "obj-20",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -153,7 +153,7 @@
 				"box" : 				{
 					"comment" : "Ratio",
 					"id" : "obj-15",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -166,7 +166,7 @@
 				"box" : 				{
 					"comment" : "Attack",
 					"id" : "obj-12",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -179,7 +179,7 @@
 				"box" : 				{
 					"comment" : "Release",
 					"id" : "obj-10",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -212,14 +212,14 @@
 					"patching_rect" : [ 152.97863382101059, 191.0, 95.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "attack[4]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 0.99,
 							"parameter_initial" : [ 0.1 ],
 							"parameter_shortname" : "Forgetting Factor",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "attack[19]"
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -549,16 +549,16 @@
 					"patching_rect" : [ 314.793162012100197, 401.5, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : 1.0,
+							"parameter_exponent" : 2.0,
+							"parameter_longname" : "attack[2]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 10.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "Ratio",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_linknames" : 1,
-							"parameter_mmin" : 1.0,
-							"parameter_exponent" : 2.0,
-							"parameter_longname" : "attack[18]"
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -583,11 +583,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 95.0, 29.0, 30.0, 30.0 ]
 				}
 
@@ -676,15 +676,15 @@
 					"patching_rect" : [ 296.100000000000023, 645.435897409915924, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : 1.0,
+							"parameter_exponent" : 2.0,
+							"parameter_longname" : "attack[17]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 500.0,
 							"parameter_initial" : [ 50 ],
 							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 2,
-							"parameter_mmin" : 1.0,
-							"parameter_exponent" : 2.0,
-							"parameter_longname" : "attack[17]"
+							"parameter_unitstyle" : 2
 						}
 
 					}
@@ -705,16 +705,16 @@
 					"patching_rect" : [ 199.0, 645.435897409915924, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : 0.1,
+							"parameter_exponent" : 2.0,
+							"parameter_longname" : "attack",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 500.0,
 							"parameter_initial" : [ 2 ],
 							"parameter_shortname" : "Attack",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2,
-							"parameter_linknames" : 1,
-							"parameter_mmin" : 0.1,
-							"parameter_exponent" : 2.0,
-							"parameter_longname" : "attack[20]"
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -1320,20 +1320,20 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 63.0, 29.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "multiplication_factor",
+					"comment" : "signal",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1564,7 +1564,20 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-19" : [ "attack[4]", "Forgetting Factor", 0 ],
+			"obj-7" : [ "attack[2]", "Ratio", 0 ],
+			"obj-109" : [ "attack", "Attack", 0 ],
+			"obj-113" : [ "attack[17]", "Release", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
